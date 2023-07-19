@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--main-font-color);
+
+    /* Переменные */
+    --main-font-color: #e4e5ea;
+    --bg-color: #0e1014;
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+a {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.small {
+    display: none;
+}
+
+.bonuses__small {
+    display: none;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    margin-bottom: 120px;
+}
+
+.logo {
+    position: relative;
+    margin-right: 52px;
+}
+
+.logo__description {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    top: 34px;
+}
+
+.navbar {
+    display: flex;
+    font-weight: 500;
+}
+
+.navbar__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    font-weight: 500;
+}
+
+.nav-contacts__phone {
+    margin-right: 47px;
+}
+
+.social-network:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* main */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+}
+
+.offer__title {
+    margin-bottom: 30px;
+}
+
+.offer__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.offer__title__highlight {
+    font-weight: 900;
+    background: linear-gradient(149deg, rgba(252, 176, 69, 1) 0%, rgba(255, 63, 120, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.advantages {
+    text-align: right;
+}
+
+.advantages__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.advantages__title__highlight {
+    background: var(--gradient, linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.bonuses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 61px;
+}
+
+.bonus__title {
+    margin-bottom: 6px;
+}
+
+.bonus__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-font-color);
+    background: #4077f3;
+    text-align: center;
+    font-size: 16px;
+    padding: 21px 35px;
+    cursor: pointer;
+    border: none;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 55px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.footer__about {
+    margin-right: 98px;
+}
+
+.footer__title {
+    color: #656566;
+    margin-bottom: 20px;
+}
+
+.partner {
+    margin-bottom: 10px;
+}
+
+.footer__contacts {
+    text-align: right;
+}
+
+.footer__menu-list {
+    display: grid;
+    grid-template-columns: 150px 220px;
+    gap: 10px 52px;
+}
+
+.footer__contacts {
+    margin-left: auto;
+}
+
+.footer__social-networks {
+    margin-bottom: 20px;
+}
+
+.footer__phone {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__social-network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__address {
+    margin-bottom: 70px;
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.copyright__underline {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+/* effects */
+
+#red-ball-big {
+    position: absolute;
+    top: 83px;
+    left: 519px;
+    z-index: -1;
+}
+
+#red-ball-small {
+    position: absolute;
+    top: 547px;
+    left: 851px;
+    z-index: -1;
+}
+
+#purple-ball {
+    position: absolute;
+    top: 2px;
+    left: 868px;
+    z-index: -1;
+}
+
+#purple-light {
+    position: absolute;
+    top: -2px;
+    left: 202px;
+    z-index: -1;
+    width: 900px;
+}
+
+#red-light {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    #purple-light {
+        left: 40px;
+    }
+    .social-network:not(:last-child) {
+        margin-right: 10px;
+    }
+    .nav-contacts__phone {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .nav-contacts {
+        display: none;
+    }
+    .footer__about {
+        margin-right: 38px;
+    }
+    .footer__menu-list {
+        gap: 10px 10px;
+    }
+    #purple-ball {
+        left: 508px;
+    }
+    #purple-light {
+        width: 600px;
+    }
+    #red-ball-small {
+        left: 353px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .logo {
+        display: none;
+    }
+    nav {
+        margin: 0 auto;
+    }
+    .header {
+        margin-bottom: 0;
+        padding-top: 28px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .advantages {
+        text-align: left;
+    }
+    .offer {
+        padding-top: 40px;
+        margin-bottom: 45px;
+    }
+    .offer__title {
+        margin-bottom: 15px;
+    }
+    .advantages__title {
+        margin-bottom: 20px;
+    }
+    .bonuses {
+        display: none;
+    }
+    .bonuses__small {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 10px;
+        margin-bottom: 20px;
+    }
+    .bonus__subtitle__small {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.65px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+    .bonus__subtitle__small:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 1px;
+        margin-right: 5px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px
+    }
+    .footer__about {
+        margin-right: 0px;
+    }
+    .footer__menu-list {
+        grid-template-columns: 116px 133px;
+        gap: 10px 47px;
+    }
+    .large {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+    .footer__contacts {
+        margin-left: 0;
+        text-align: left;
+    }
+    .footer__phone {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .footer__social-networks {
+        margin-bottom: 10px;
+    }
+    .footer__address {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .sertificates {
+        display: none;
+    }
+    #red-light {
+        width: 90%;
+    }
+    #purple-light {
+        width: 90%;
+        left: 25px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .navbar__item:not(:last-child) {
+        margin-right: 16px;
+    }
+    .navbar__item {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    #purple-ball {
+        left: 50%;
+    }
+    #red-ball-big {
+        display: none;
+    }
+    #red-ball-small {
+        left: 50%;
+    }
+    .button {
+        display: none;
+    }
+    .header {
+        padding: 20px 16px;
+        background-color: var(--bg-color);
+    }
+    .main {
+        background: url('./img/bg.png');
+        background-size: cover;
+        padding-left: 5%;
+        padding-bottom: 59px;
+        margin-bottom: 0;
+    }
+    .footer {
+        padding-left: 5%;
+        padding-top: 42px;
+        background-color: var(--bg-color);
+        padding-bottom: 60px;
+    }
+    .bonuses__small {
+        margin-bottom: 0px;
+    }
+    .footer__item {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .footer__address {
+        font-size: 14px;
+    }
+    .footer__social-network img {
+        width: 24px;
+        height: 24px;
+    }
+    .advantages__title__highlight {
+        text-transform: lowercase;
+    }
+    .bonuses__small {
+        grid-template-columns: 120px 150px;
+    }
+}
